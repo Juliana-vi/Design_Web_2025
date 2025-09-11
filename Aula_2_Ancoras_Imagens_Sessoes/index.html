@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Free Web tutoriais">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Juliana Vianna">
+    
+
+    <title>SECITEX</title>
+</head>
+<body>
+    <header>
+        <!--HEADER: Representa o conteúdo principal da pág-->
+        <h1>SECITEX - SEMANA DE CIÊNCIAS, TECNOLOGIA E EXTENSÃO</h1>
+        <nav>
+            <ol>
+                <li><a href="programacao.html">PROGRAMAÇÃO</a></li>
+                <li><a href="inscricao.html">INSCRIÇÃO</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href="palestrantes.html">PALESTRANTES</a></li>
+                <!--A: âncora interna: Chamar uma pág do próprio site-->
+
+            </ol>
+            <!--A definição de ol ou ul vai depender do conceito do projeto-->
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>DESTAQUE</h2>
+            <figure>
+                <!--FIGURE: Representa uma área para envolver a ou as imagens...-->
+                <img src="Imagens/VI_Secitex_2023.width-800.png" alt="Foto de pessoas na SECITEX">
+            </figure>
+        </section>
+        <section>
+            <h2>PROGRAMAÇÃO</h2>
+            <table border="1">
+                <!--
+                     CAPTION - título da tabela (opcional)
+                     TR -table row - linha da tabela
+                     TH - table head - célula de título
+                     TD - table data - célula de dados
+                -->
+                <tr>
+                    <th>Atividade</th>
+                    <th>Dia/Hora</th>
+                </tr>
+                <tr>
+                    <td>Palestra de Nicole</td>
+                    <td>12/09 ás 11h</td>
+                </tr>
+                <tr>
+                    <td>Palestra de Luna</td>
+                    <td>12/09 ás 14h</td>
+                </tr>
+                <tr>
+                    <td>Palestra de Juliana Vianna</td>
+                    <td>12/09 ás 16h</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        CÉLULAS MESCLADAS HORIZONTALMENTE
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">CÉLULAS MESCLADAS VERTICALMENTE</td>
+                    <!--ROWSPAN: Mescla linhas-->
+                    <td>Célula que sobrou</td>
+                </tr>
+                <tr>
+                    <td>Célula que sobrou</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <adress>
+            av. Senador Salgado Filho, 5487
+        </adress>
+        <figure>
+            <a href="http://portal.ifrn.edu.br"><img src="Imagens/logo-ifrn-natal.webp" alt="Marca do IFRN"></a>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Instagram</a></li>
+
+            </ul>
+        </nav>
+        <p>Desenvolvido por Juliana</p>
+    </footer>
+</body>
+</html>
