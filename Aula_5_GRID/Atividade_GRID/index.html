@@ -1,74 +1,125 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SHIFT - 1º Encontro de UX no IFRN</title>
-  <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIFT - 1º Encontro de UX no IFRN</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div class="container">
+    <div class="titulo-bloco">
+        <h1>SHIFT</h1>
+        <span class="subtitulo">1º Encontro de UX no IFRN</span>
+    </div>
 
-    <aside>
-      <h1>SHIFT<br><span>1º Encontro de UX no IFRN</span></h1>
-      <nav>
-        <ul>
-          <li><a href="#">Inscrições</a></li>
-          <li><a href="#">Programação</a></li>
-          <li><a href="#">Palestrantes</a></li>
-          <li><a href="#">Organização</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-    </aside>
+    <div class="container">
+        <aside class="barra-lateral">
+            <nav>
+                <ul>
+                    <li>Inscrições</li>
+                    <li>Programação</li>
+                    <li>Palestrantes</li>
+                    <li>Organização</li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
+        </aside>
 
-    <main>
+        <main class="conteudo-principal">
+            <section class="top-row">
+                <div class="evento">
+                    <p>O evento será organizado<br>
+                    Cillum singulis voluptiae<br>
+                    et o enim cillum ad<br>
+                    aliquip, incididunt.</p>
+                    <button class="ler-mais">Ler mais</button>
+                </div>
 
-      <section class="info box">
-        <p>O evento será organizado <a href="#">Cillum singulis voluptate</a> 
-        e o enim cillum ad aliquip, incididunt.</p>
-        <button>Ler mais</button>
-      </section>
+                <div class="programacao">
+                    <h2>Programação</h2>
+                    <table>
+                        <tr>
+                            <td>03/06</td>
+                            <td>08:00</td>
+                            <td>Abertura</td>
+                        </tr>
+                        <tr>
+                            <td>03/06</td>
+                            <td>11:00</td>
+                            <td>Sorteios</td>
+                        </tr>
+                        <tr>
+                            <td>04/06</td>
+                            <td>08:00</td>
+                            <td>Palestra de Andrei Gurgel</td>
+                        </tr>
+                        <tr>
+                            <td>04/06</td>
+                            <td>11:00</td>
+                            <td>Sorteios</td>
+                        </tr>
+                    </table>
+                </div>
 
-      <section class="programacao box">
-        <h2>Programação</h2>
-        <table>
-          <tr><td>Dia</td><td>Hora</td><td>Atividade</td></tr>
-          <tr><td>03/06</td><td>08:00</td><td>Abertura</td></tr>
-          <tr><td>03/06</td><td>11:00</td><td>Sorteios</td></tr>
-          <tr><td>04/06</td><td>08:00</td><td>Palestra de André Gurgel</td></tr>
-          <tr><td>04/06</td><td>11:00</td><td>Sorteios</td></tr>
-        </table>
-      </section>
+                <div class="palestrante-img">
+                    <img src="Imagens/amanda.jpg" alt="Amanda Freire">
+                    <span class="nome">Amanda Freire</span>
+                </div>
+            </section>
 
-      <div class="palestrante img1"><span>Amanda Freire</span></div>
-      <div class="palestrante img2"><span>Letícia Fernandes</span></div>
-      <div class="palestrante img3"><span>Natália Lima</span></div>
-      <div class="palestrante img4"><span>Henrique Amado</span></div>
+            <section class="middle-row">
+                <div class="palestras">
+                    <ul>
+                        <li>Palestras</li>
+                        <li>Workshops</li>
+                        <li>Minicursos</li>
+                        <li>Estudos de casos</li>
+                        <li>Prêmios</li>
+                    </ul>
+                </div>
 
-      <section class="inscricao box">
-        <h2>Inscrição</h2>
-        <form>
-          <input type="text" placeholder="Nome">
-          <input type="email" placeholder="E-mail">
-          <input type="text" placeholder="Celular">
-          <label><input type="checkbox"> Aluno do IF</label>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
+                <div class="inscricao">
+                    <h2>Inscrição</h2>
+                    <form>
+                        <input type="text" placeholder="Nome">
+                        <input type="email" placeholder="E-mail">
+                        <input type="text" placeholder="Celular">
+                        <label class="checkbox"><input type="checkbox"> Aluno do IF</label>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
 
-      <section class="organizacao box">
-        <h2>Organização</h2>
-        <p>Professoras do DIATINF/CMAT/IFRN:<br>
-           • Profa. Alyana Macêdo<br>
-           • Profa. Daniele Freitas</p>
-      </section>
+                <div class="palestrante-img">
+                    <img src="Imagens/georgia.jpg" alt="Natália Lima">
+                    <span class="nome">Natália Lima</span>
+                </div>
 
-    </main>
-  </div>
+                <div class="palestrante-img">
+                    <img src="Imagens/henrique.jpg" alt="Henrique Arnaldo">
+                    <span class="nome">Henrique Arnaldo</span>
+                </div>
+            </section>
+            
+            <section class="bottom-row">
+                <div class="palestrante-img">
+                    <img src="Imagens/ellen.jpg" alt="Larissa Fernandes">
+                    <span class="nome">Larissa Fernandes</span>
+                </div>
 
-  <footer>
-    <p>Desenvolvido por IFRN</p>
-  </footer>
+                <div class="organizacao">
+                    <h2>Organização</h2>
+                    <p>Professoras do DIAT/INF/CNAT/IFRN:</p>
+                    <ul>
+                        <li>Profa. Alyana Macêdo</li>
+                        <li>Profa. Danielle Freitas</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        Desenvolvido por IFRN.
+    </footer>
 </body>
 </html>
