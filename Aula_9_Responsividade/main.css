@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box; /**/
+}
+
+div {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; /*Quando houver quebra, ele perimte que o outro elemento fique embaixo*/
+    gap: 1rem;
+    justify-content: center;
+}
+
+section {
+    border: 1px solid black;
+    padding: 1rem;
+    flex-basis: 22%; /*Definir a largura de um elemento dentro de um display flex*/
+}
+
+@media (max-width: 1440px) {
+    /*MEDIA SCREEN: Técnica condicional para responsividade utilizando css*/
+    body {
+        background-color: aquamarine;
+    }
+
+    section {
+        flex-basis: 48%; /*Permitirá que fique 2 section´s por "linha"*/
+    }
+}
+
+@media (max-width: 744px) {
+    /**/
+    body {
+        background-color: plum;
+    }
+
+    section {
+        flex-basis: 98%; /*Permitirá que cada section fique em uma linha*/
+    }
+}
+
