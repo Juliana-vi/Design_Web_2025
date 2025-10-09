@@ -17,7 +17,7 @@ body {
 }
 
 aside {
-  background: linear-gradient(to left,#7292A6, #224459 )
+  background: linear-gradient(to left,#7292A6, #224459 );
   color: #fff;
   padding: 20px;
 }
