@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+header {
+    background: linear-gradient(to left, #ab65ad, #902994);
+    color: #fff;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    transition-property: all;
+    transition-duration: 1s;
+    font-size: 10;
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}

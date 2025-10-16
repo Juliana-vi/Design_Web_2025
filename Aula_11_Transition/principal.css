@@ -1,0 +1,46 @@
+body {
+    background-color: antiquewhite !important;
+    /* !important : Define prioridade ao atributo a que se refere. Tem que ser aplicado dentro da linha de valor */
+    background-color: aqua;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+div {
+    padding: 2rem;
+    border: 1px solid black;
+    font-size: 3rem;
+    text-align: center;
+    filter: blur(5px);
+    transition-property: all;
+    /* Transition: define efeito de transição para o hover. Pode colocar os valores do duration e do property juntos no translation, Tem interação com o usuário */
+    /* Transition-property: propriedades que você quer que aplique a transição */
+    /* Transition-behavior: comportamento da transição */
+    /* Transition-duration: duração da transição */
+    transition-duration: 0.2s;
+}
+
+div:hover {
+    filter: blur(0);
+    border-radius: 2rem;
+    box-shadow: 0 0 20px gray;
+}
+
+input {
+     transition-property: all;
+    transition-duration: 0.2s;
+}
+
+input:hover {
+    border: 10px solid black;
+}
+
+input:focus {
+    background-color: blanchedalmond;
+}
+
+
