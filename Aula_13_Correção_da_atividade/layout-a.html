@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*O seletor de * vai selecionar TODAS as marcações*/
+
+        :root {
+            --azulescuro: #08254F;
+            --corcreme: #D8D4CB;
+
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        section:first-child {
+           background-color: var(--corcreme);
+
+        }
+
+        /*body {
+            display: flex;
+            flex-wrap:wrap;
+            align-items: center;
+            flex-direction: column;
+        }*/
+
+        section:nth-child(3), section:nth-child(2) {
+            max-width: 70rem;
+            margin: 0 auto;
+        }
+    
+
+        section:nth-child(3) {
+            /*nth-child: Enésimo filho*/
+           /*Max-width vai ajudar na RESPONSIVIDADE*/
+           border: 1px solid black;
+           /*Margin: Valores - 0 para cima e baixo, auto: esquerda e direita. O margin só vai funcionar se for definida largura. Margin e width trabalham juntos*/
+        }
+
+        section:nth-child(2) {
+            display: flex;
+            background-color: violet;
+            padding: 0;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        section:nth-child(2) div {
+            color: white;
+            background-color: var(--azulescuro);
+            text-align: center;
+            padding: 2rem;
+            width: 10rem;
+            /*Box-sizing: Não altera as dimesões do elemento ao colocar o padding*/
+            position: relative;
+            top: -2rem;
+            flex-basis: 31.42222%;
+        }
+
+        section:nth-child(2) h2 {
+            flex-basis: 100%;
+            /*Mais elegante e melhor para trabalhar do que width. Ainda mais quando se usa display-flex*/
+        }
+
+        section:nth-child(2) div h2{
+            margin-bottom: 2rem;
+
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Só porque toda página tem que ter</h1>
+        <!--tem que ter porém só pode ter um-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusamus vitae non corporis id harum beatae iusto ratione eligendi. Expedita veritatis molestias qui eligendi? Qui tempora dolorum nostrum! Perferendis, maxime.
+
+        </p>
+        <section>
+            <div>
+                <h2>Lorem, ipsum</h2>
+                <p>Lorem ipsum dolor si impedit qui autem, dignissimos possimus nobis</p>
+            </div>
+            <div>
+                <h2>Lorem, ipsum</h2>
+                <p>Lorem ipsum dolor si impedit qui autem, dignissimos possimus nobis</p>
+            </div>
+            <div>
+                <h2>Lorem, ipsum</h2>
+                <p>Lorem ipsum dolor si impedit qui autem, dignissimos possimus nobis</p>
+        </section>
+    </section>
+</body>
+</html>
