@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade avaliativa2 3-bi tema 1</title>
+</head>
+
+<body>
+    <label>
+        <input type="number" id="n1">
+        <p id="adicionar"></p>
+        <p id="subtrair"></p>
+    </label>
+    <button id="mais">+</button>
+    <button id="menos">-</button>
+    <p id="resultado"></p>
+
+    <script>
+        const btnmais = document.querySelector("#adicionar");
+        btnmais.addEventListener("click", function (e) {
+            let n1 = document.getElementById("n1").value;
+            let adicionar = parseInt(n1) + 1;
+            console.log(adicionar);
+            document.getElementById("resultado").innerHTML = adicionar;
+        })
+
+        const btnmenos = document.querySelector("#subtrair");
+        btnmenos.addEventListener("click", function (e) {
+            let n1 = document.getElementById("n1").value;
+            let subtrair = parseInt(n1) - 1;
+            console.log(subtrair);
+            document.getElementById("resultado").innerHTML = subtrair;
+        })
+
+        function adicionar(n1) {
+            return n1 + 1;
+        }
+        console.log(adicionar());
+
+        function subtrair(n1) {
+            return n1 - 1;
+        }
+        console.log(subtrair());
+    </script>
+</body>
+
+</html>

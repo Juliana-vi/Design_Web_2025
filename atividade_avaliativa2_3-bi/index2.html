@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade avaliativa 3-bi tema 2</title>
+</head>
+
+<body>
+    <p id="texto" onclick="mudarcor()">INFOWEB</p>
+    <input type="color" id="cor">
+    <script>
+        let cores = ["green", "pink", "blue", "yellow", "red"];
+
+        console.log(Math.random())
+        console.log(Math.random() * 8);
+        let x = Math.floor(Math.random() * 8);
+        console.log(x);
+
+        let texto = document.getElementById("texto");
+        texto.addEventListener("Click", function (e) {
+            let cor = document.getElementById("cor").value;
+            document.getElementById("texto").style.color = cor;
+        });
+
+        function mudarcor() {
+            let cor = document.getElementById("cor").value;
+            document.body.style.color = cor;
+        }
+
+    </script>
+</body>
+
+</html>
