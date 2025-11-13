@@ -59,7 +59,7 @@
 
         let emocoes = ["😊", "🤣", "😒", "😘"];
 
-        console.log(Math.radom())
+        console.log(Math.random())
         //Math.random() retorna um número randõmico entre 0 e 1
         console.log(Math.random() * 8);
         let x = Math.floor(Math.random() * 8);
@@ -73,10 +73,10 @@
         console.log(n);
     }
     for(let item in emocoes){
-        console.log(emocoes[item + " - "]);
+        console.log(emocoes[item] + " - ");
     }
     for(let item in alunos){
-        console.log(alunos[item + " - "]);
+        console.log(alunos[item] + " - ");
     }
     alunos.forEach(function(index){
         console.log("foreach - " + index);
