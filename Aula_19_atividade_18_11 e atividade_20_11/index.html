@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade-18-11</title>
+
+    <style>
+        button {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 100%;
+            border: 1px solid white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="area-botoes"></div>
+
+    <script>
+
+
+        function planoDeFundoBody(r, g, b) {
+            document.body.style.backgroundColor = `rgb(${ r }, ${ g }, ${ b })`;
+        }
+
+
+        for (let i = 0; i < 100; i++) {
+
+
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+
+
+            let botao = document.createElement("button");
+
+            botao.style.backgroundColor = `rgb(${ r }, ${ g }, ${ b })`;
+
+
+            botao.setAttribute("onclick", `planoDeFundoBody(${ r }, ${ g }, ${ b })`);
+
+            document.getElementById("area-botoes").appendChild(botao);
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 18-11</title>
+
+</head>
+
+<body>
+
+    <label>Nome:</label>
+    <input type="text" id="nome">
+    <button onclick="adicionar()">Adicionar</button>
+
+    <p id="lista"></p>
+
+    <script>
+
+
+        let nomes = ["Maria", "José", "Dani", "Caio"];
+
+
+        function exibirLista() {
+            let texto = "";
+
+            for (let i = 0; i < nomes.length; i++) {
+                texto += nomes[i] + "<br>";
+            }
+
+            document.getElementById("lista").innerHTML = texto;
+        }
+
+
+        exibirLista();
+
+
+        function adicionar() {
+
+            let nomeDigitado = document.getElementById("nome").value;
+
+            if (nomeDigitado.trim() === "") {
+                alert("Digite um nome!");
+                return;
+            }
+
+
+            nomes.push(nomeDigitado);
+
+
+            exibirLista();
+
+            document.getElementById("nome").value = "";
+        }
+
+    </script>
+
+</body>
+
+</html>
