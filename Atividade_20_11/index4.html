@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verificar Senha</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="password" id="senha1" placeholder="Senha">
+    <br>
+    <input type="password" id="senha2" placeholder="Confirmação de senha">
+    <br>
+    <button onclick="verificar()">Verificar senhas</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function verificar() {
+            const s1 = document.getElementById("senha1").value;
+            const s2 = document.getElementById("senha2").value;
+            const resultado = document.getElementById("resultado");
+
+            if (s1 === s2) {
+                resultado.textContent = "Iguais";
+            } else {
+                resultado.textContent = "Diferentes";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

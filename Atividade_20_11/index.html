@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contador</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        button {
+            font-size: 25px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+
+        #numero {
+            font-size: 40px;
+            margin: 20px;
+            display: inline-block;
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="remover()">-</button>
+    <span id="numero">0</span>
+    <button onclick="adicionar()">+</button>
+
+    <script>
+        let valor = 0;
+        const numero = document.getElementById("numero");
+
+        function adicionar() {
+            valor++;
+            numero.textContent = valor;
+        }
+
+        function remover() {
+            valor--;
+            numero.textContent = valor;
+        }
+    </script>
+
+</body>
+
+</html>

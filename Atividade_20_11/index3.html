@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Tamanhos</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 5px;
+        }
+
+        .resultado p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input id="texto" type="text" placeholder="Digite um texto">
+    <button onclick="mostrar()">Mostrar</button>
+
+    <div class="resultado" id="resultado"></div>
+
+    <script>
+        function mostrar() {
+            const texto = document.getElementById("texto").value;
+            const area = document.getElementById("resultado");
+            area.innerHTML = `
+                <p style="font-size:1rem">${texto}</p>
+                <p style="font-size:2rem">${texto}</p>
+                <p style="font-size:3rem">${texto}</p>
+                <p style="font-size:4rem">${texto}</p>
+                <p style="font-size:5rem">${texto}</p>
+            `;
+        }
+    </script>
+
+</body>
+
+</html>
