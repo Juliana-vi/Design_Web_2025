@@ -143,8 +143,10 @@
         //EVENTOS DE MOUSE
         //click, dbclick, mousedown, mouseup, mousemove, mouseover, mouseout
         window.addEventListener('mousemove', eventomousemove)
-        function eventomousemove(){
-            console.log("Evento mousemove");
+        function eventomousemove(e){
+            const x = e.clientX;
+            const y = e.clientY;
+            console.log(`Eixo x: ${x}. Eixo Y: ${y}`);
         }
     </script>
 </body>
