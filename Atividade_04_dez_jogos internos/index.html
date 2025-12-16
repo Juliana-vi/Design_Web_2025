@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Atividade 04 dez - jogos internos</title>
+
+    <style id="tema">
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 40px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 10px auto;
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Título qualquer</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora praesentium corporis facere perspiciatis placeat est a iure distinctio minima. Nemo eum ipsam sunt sed labore alias, qui porro nobis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, ex porro! Porro eum soluta, rerum mollitia distinctio rem aliquam perferendis minima esse facere, corrupti numquam quos quis tenetur vel unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil inventore corrupti sapiente autem voluptatem aliquid non eos iusto harum? Debitis quis quisquam, animi earum dolorem dicta ipsum quibusdam voluptates commodi.</p>
+
+    <div>
+        <button onclick="tema1()">Tema 1</button>
+        <button onclick="tema2()">Tema 2</button>
+        <button onclick="tema3()">Tema 3</button>
+    </div>
+
+    <script>
+        const estilo = document.getElementById("tema");
+
+        function tema1() {
+            estilo.innerHTML = `
+        body {
+          background-color: #121212;
+          color: #ffffff;
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin: 0;
+          padding: 40px;
+          line-height: 1.6;
+        }
+        h1 { font-size: 36px; margin-bottom: 20px; }
+        p { max-width: 600px; margin: 10px auto; font-size: 18px; }
+        button {
+          background-color: #333333;
+          color: #ffffff;
+          border: none;
+          padding: 10px 20px;
+          margin: 10px;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+      `;
+        }
+
+        function tema2() {
+            estilo.innerHTML = `
+        body {
+          background-color: #ffefd5;
+          color: #2c3e50;
+          font-family: 'Comic Sans MS', cursive;
+          text-align: center;
+          margin: 0;
+          padding: 40px;
+          line-height: 1.8;
+        }
+        h1 { font-size: 38px; color: #e74c3c; }
+        p { max-width: 650px; margin: 12px auto; font-size: 19px; }
+        button {
+          background-color: #3498db;
+          color: #ffffff;
+          border: 2px solid #2980b9;
+          padding: 12px 22px;
+          margin: 10px;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 20px;
+        }
+      `;
+        }
+
+        function tema3() {
+            estilo.innerHTML = `
+        body {
+          background-color: #ffffff;
+          color: #000000;
+          font-family: 'Segoe UI', sans-serif;
+          text-align: left;
+          margin: 40px;
+          padding: 0;
+          line-height: 1.5;
+        }
+        h1 { font-size: 32px; margin-bottom: 15px; }
+        p { max-width: 700px; margin: 8px 0; font-size: 17px; }
+        button {
+          background-color: transparent;
+          color: #000000;
+          border: 1px solid #000000;
+          padding: 8px 16px;
+          margin: 5px 5px 0 0;
+          font-size: 14px;
+          cursor: pointer;
+          border-radius: 0;
+        }
+      `;
+        }
+    </script>
+
+</body>
+
+</html>
